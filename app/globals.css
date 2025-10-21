@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scroll */
+html, body { scroll-behavior: smooth; }
+
+/* Grain overlay for "crystal" vibe */
+.grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("/grain.png");
+  mix-blend-mode: overlay;
+  opacity: .12;
+}
